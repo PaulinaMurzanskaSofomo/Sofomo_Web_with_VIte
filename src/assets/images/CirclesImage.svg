@@ -1,0 +1,31 @@
+<svg width="241" height="406" viewBox="0 0 241 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.328962">
+<rect opacity="0.01" x="-200" width="441" height="267.069" fill="white"/>
+<mask id="mask0_0_258" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-200" y="0" width="441" height="268">
+<rect x="-200" width="441" height="267.069" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_258)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-134 204.553C-134 115.264 -61.7668 43.0117 27.5 43.0117C116.767 43.0117 189 115.264 189 204.553C189 293.843 116.767 366.095 27.5 366.095C-61.7668 366.095 -134 293.843 -134 204.553Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27 347.089C106.041 347.089 170 283.114 170 204.052C170 124.991 106.041 61.0156 27 61.0156C-52.0413 61.0156 -116 124.991 -116 204.052C-116 283.114 -52.0413 347.089 27 347.089Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-99 203.552C-99 134.165 -42.8683 78.0195 26.5005 78.0195C95.8682 78.0195 152 134.165 152 203.552C152 272.938 95.8682 329.084 26.5005 329.084C-42.8683 329.084 -99 272.938 -99 203.552Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.9995 311.08C86.1428 311.08 134 263.211 134 204.053C134 144.895 86.1428 97.0254 26.9995 97.0254C-32.1428 97.0254 -80 144.895 -80 204.053C-80 263.211 -32.1428 311.08 26.9995 311.08Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-62 204.553C-62 155.071 -21.97 115.029 27.4995 115.029C76.9689 115.029 117 155.071 117 204.553C117 254.035 76.9689 294.075 27.4995 294.075C-21.97 294.075 -62 254.035 -62 204.553Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27 276.07C66.797 276.07 99 243.859 99 204.052C99 164.244 66.797 132.033 27 132.033C-12.797 132.033 -45 164.244 -45 204.052C-45 243.859 -12.797 276.07 27 276.07Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-27 203.553C-27 173.974 -3.0715 150.039 26.5 150.039C56.0715 150.039 80 173.974 80 203.553C80 233.132 56.0715 257.067 26.5 257.067C-3.0715 257.067 -27 233.132 -27 203.553Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.9995 240.062C46.8985 240.062 63 223.956 63 204.053C63 184.149 46.8985 168.043 26.9995 168.043C7.1004 168.043 -9 184.149 -9 204.053C-9 223.956 7.1004 240.062 26.9995 240.062Z" stroke="#D6D6D6" stroke-width="1.296"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 204.554C10 194.879 17.827 187.049 27.4995 187.049C37.173 187.049 45 194.879 45 204.554C45 214.229 37.173 222.058 27.4995 222.058C17.827 222.058 10 214.229 10 204.554Z" stroke="#D6D6D6" stroke-width="1.296"/>
+</g>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M106.669 277.249L-15.7098 405.956L-15.7098 332.112L37.2574 277.249L106.669 277.249Z" fill="#69CBA9"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.0216 225.059L-61 334.087H-31.0216L78 225.059H48.0216Z" fill="url(#paint0_linear_0_258)"/>
+<path d="M170.983 61.0077H155" stroke="#5B6063" stroke-width="1.134"/>
+<path d="M162.992 53.0137V69.001" stroke="#5B6063" stroke-width="1.134"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M67 119.437C67 121.87 68.9725 123.844 71.4061 123.844C73.8393 123.844 75.8122 121.87 75.8122 119.437C75.8122 117.002 73.8393 115.029 71.4061 115.029C68.9725 115.029 67 117.002 67 119.437Z" stroke="#5B6063" stroke-width="1.134"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M175 214.456C175 215.783 176.075 216.858 177.401 216.858C178.727 216.858 179.802 215.783 179.802 214.456C179.802 213.13 178.727 212.055 177.401 212.055C176.075 212.055 175 213.13 175 214.456Z" stroke="#5B6063" stroke-width="1.134"/>
+<defs>
+<linearGradient id="paint0_linear_0_258" x1="-48.0408" y1="184.833" x2="-153.846" y2="356.975" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FDE49E"/>
+<stop offset="1" stop-color="#FBAE79"/>
+</linearGradient>
+</defs>
+</svg>
