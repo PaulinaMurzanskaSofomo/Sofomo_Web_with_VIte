@@ -1,5 +1,4 @@
-import React from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, { useId } from "react";
 import { aboutList } from "../../../assets/content/landingOutsource/SectionOutsTop";
 import {
   List,
@@ -39,7 +38,6 @@ import {
   StyledAvatar,
 } from "./StyledOutsourcePageDisplay";
 import { ContactModal } from "../../../organisms";
-import { useResize } from "../../../hooks/useResize";
 import { useContactFormContext } from "../../../context/ContactFormContext";
 import { useLaptopScreen, useScreenGraterThanTablet } from "../../../hooks";
 import { MotionContainer } from "../../../libs/framer";
@@ -85,7 +83,7 @@ export const OutsourcePageDisplay = ({
             <List variant="standard">
               {aboutList.map((item) => (
                 <ListItem
-                  key={uuidv4()}
+                  key={useId()}
                   variant="icon-left"
                   listItem={item}
                   margin="0 0 1rem 0"
@@ -157,7 +155,7 @@ export const OutsourcePageDisplay = ({
                   <List variant="standard" margin="0">
                     {item.role.map((item) => (
                       <ListItem
-                        key={uuidv4()}
+                        key={useId()}
                         checkIconColor={theme.colors.white}
                         listItem={item.title}
                         variant="icon-left"

@@ -1,45 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from "react";
+import GlobalStyles from "./themes/GlobalStyles";
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { theme } from "./themes/MainTheme";
+import PageOverlayContext from "./context/PageOverlayContext";
+import { ContactFormContext, NavItemStateContext } from "./context";
+import { PageTemplate } from "./templates/PageTemplate";
+import { ROUTE } from "./routes";
+import { OutsourcePage } from "./pages/OutsourcePage";
+import { HomePage } from "./pages/HomePage";
+// import { AndroidPage } from "./pages/AndroidPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <ContactFormContext>
+      <NavItemStateContext>
+        <PageOverlayContext>
+          <ThemeProvider theme={theme}>
+            <BrowserRouter>
+              <GlobalStyles />
+              <PageTemplate>
+                <Routes>
+                  <Route path={ROUTE.HOME_PAGE} element={<HomePage />} />
+                  <Route path={ROUTE.OUTSOURCE} element={<OutsourcePage />} />
+                  {/* <Route path={ANDROID} element={<AndroidPage />} /> */}
+                </Routes>
+              </PageTemplate>
+            </BrowserRouter>
+          </ThemeProvider>
+        </PageOverlayContext>
+      </NavItemStateContext>
+    </ContactFormContext>
+  );
 }
 
-export default App
+export default App;

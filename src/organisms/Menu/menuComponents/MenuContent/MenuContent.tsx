@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, { useEffect, useRef, useState, useId } from "react";
 import { Link } from "react-router-dom";
 import { Typography } from "../../../../components/atoms";
 import { Card } from "../../../../components/molecules";
@@ -51,7 +50,7 @@ export const MenuContent = ({ navItemActive, selectedItem }: Props) => {
             </StyledTitle>
             <StyledCardsWrapper>
               {(selectedItem === "menu-1" ? whatWeDoCards : aboutUsCards).map((card) => (
-                <Link to={card.path} key={uuidv4()}>
+                <Link to={card.path} key={useId()}>
                   <Card title={card.title} variant="medium-responsive" hover>
                     <Typography as="p" variant="body_text_7" color={theme.colors.gray600}>
                       {card.text}

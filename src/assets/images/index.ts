@@ -12,7 +12,6 @@ import owners from "./OwnersImage.png";
 import scrumboard from "./ScrumboardImage.png";
 import techsHorizontal from "./TechIconsHorizontal.svg";
 import techsVertical from "./TechIconsVertical.svg";
-import heroHomepage from "./TopHomepageImage.svg";
 import whiteboard from "./WhiteboardImage.png";
 import heroBase from "./HeroBase.png";
 
@@ -26,7 +25,6 @@ export {
   owners,
   techsHorizontal,
   techsVertical,
-  heroHomepage,
   heroBase,
 };
 

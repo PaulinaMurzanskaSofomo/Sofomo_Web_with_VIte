@@ -1,5 +1,4 @@
-import React, { MouseEvent, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, { MouseEvent, useState, useId } from "react";
 import { developers } from "../../../../assets/content/developers";
 import { devices } from "../../../../assets/images";
 import { Image, Typography } from "../../../../components/atoms";
@@ -81,7 +80,7 @@ export const DevelopersGrid = ({ variant }: Props) => {
               className={`${variant} ${devClicked && dev.id === selectedItem ? "active" : ""}`}
             >
               {dev.role.map((role) => (
-                <Link to={role.path} key={uuidv4()}>
+                <Link to={role.path} key={useId()}>
                   <ListItem variant="plain arrow" listItem={role.title} hover />
                 </Link>
               ))}

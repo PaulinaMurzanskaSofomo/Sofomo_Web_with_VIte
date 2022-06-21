@@ -1,5 +1,4 @@
-import React, { FC } from "react";
-import { v4 as uuidv4 } from "uuid";
+import { useId } from "react";
 import { whatWeDolist } from "../../assets/content/homepage/SectionApproach";
 import { theme } from "../../themes/MainTheme";
 import {
@@ -17,7 +16,7 @@ import { featuresList } from "../../assets/content/homepage/SectionClientSuccess
 import { Typography, Image, SectionContainer } from "../../components/atoms";
 import { clock } from "../../assets/icons";
 import { ROUTE } from "../../routes";
-import Hero from "-!svg-react-loader!../../assets/images/HeroAnimated.svg";
+import { ReactComponent as Hero } from "../../assets/images/HeroAnimated.svg";
 import {
   tenYears,
   circles,
@@ -27,16 +26,15 @@ import {
   techsVertical,
   heroBase,
 } from "../../assets/images";
-import { useResize } from "../../hooks/useResize";
-import { checkMediumScreen } from "../../helpers/checkMediumScreen";
 import { StyledHomePage, StyledClockImage, StyledParagraphWrapper } from "./StyledHomePage";
 import { NestedDropdownList } from "../../organisms";
 import { MotionContainer } from "../../libs/framer";
 import { useContactFormContext } from "../../context/ContactFormContext";
+import { useTabletScreen } from "../../hooks";
+import { useResize } from "../../hooks/useResize";
 
-export const HomePage: FC = () => {
-  const screenSize = useResize();
-  const isMediumScreen = checkMediumScreen(screenSize);
+export const HomePage = () => {
+  const isMediumScreen = useTabletScreen();
 
   return (
     <StyledHomePage>
@@ -114,7 +112,7 @@ export const HomePage: FC = () => {
           <List variant="standard" margin="3.5rem 0 1rem 0">
             {featuresList.map((item) => (
               <ListItem
-                key={uuidv4()}
+                key={useId()}
                 icon={item.icon}
                 variant="icon-left"
                 iconWidth="4rem"
@@ -138,7 +136,7 @@ export const HomePage: FC = () => {
             {whatWeDolist.map((item) => (
               <ListItem
                 checkIconColor={theme.colors.blue}
-                key={uuidv4()}
+                key={useId()}
                 iconWidth="1.6rem"
                 variant="icon-left"
                 listItem={item}

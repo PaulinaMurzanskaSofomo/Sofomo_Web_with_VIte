@@ -8,7 +8,7 @@ export const useMobileScreen = () => {
 
 export const useTabletScreen = () => {
   const screenSize = useResize();
-  return screenSize < 768 && screenSize < 1094;
+  return screenSize > 768 && screenSize < 1094;
 };
 
 export const useLaptopScreen = () => {

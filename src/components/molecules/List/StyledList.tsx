@@ -74,4 +74,12 @@ export const StyledList = styled.div<Props>`
       align-items: center;
     }
   }
+  &.double-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30rem;
+    align-items: flex-start;
+    width: max-content;
+  }
 `;
