@@ -1,0 +1,1 @@
+export { StyledResponsiveContainer } from "./StyledResponsiveConainer";
