@@ -18,7 +18,7 @@ export const CurrencyBanner: FC = () => {
   const today = moment(date).format("MMM Do YY");
 
   const fetchData = async () => {
-    const apiKey = process.env.REACT_APP_EXCHANGE_RATE_API_KEY;
+    const apiKey = import.meta.env.VITE_APP_EXCHANGE_RATE_API_KEY;
     const baseUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
     await axios
       .get(baseUrl)

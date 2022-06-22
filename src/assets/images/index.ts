@@ -14,7 +14,7 @@ import techsHorizontal from "./TechIconsHorizontal.svg";
 import techsVertical from "./TechIconsVertical.svg";
 import whiteboard from "./WhiteboardImage.png";
 import heroBase from "./HeroBase.png";
-
+import heroAnimated from "./HeroAnimated.svg";
 export {
   tenYears,
   circles,
@@ -26,6 +26,7 @@ export {
   techsHorizontal,
   techsVertical,
   heroBase,
+  heroAnimated,
 };
 
 export const imagesList = [

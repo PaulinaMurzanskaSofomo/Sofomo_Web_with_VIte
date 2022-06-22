@@ -3,10 +3,10 @@ import { StyledResponsiveContainer, Typography } from "../../atoms";
 import { Card, Props } from "./Card";
 import { Meta, Story } from "@storybook/react";
 import { List } from "../List";
-import { developers1 } from "../../../assets/content/footer/SectionAbout";
 import { ListItem } from "../ListItem";
 import { socialIconsList } from "../../../assets/icons/socialIconsList";
 import { theme } from "../../../themes/MainTheme";
+import { developersShort } from "../../../assets/content/developersShort";
 
 export default {
   title: "Molecules/Card",
@@ -28,8 +28,8 @@ CardWithList.args = {
   title: "List of Items",
   children: (
     <List variant="plain">
-      {developers1.map((item, i) => (
-        <ListItem variant="plain" listItem={item.title} key={i} hover />
+      {developersShort.map((item, i) => (
+        <ListItem variant="plain" listItem={item.type} key={i} hover />
       ))}
     </List>
   ),

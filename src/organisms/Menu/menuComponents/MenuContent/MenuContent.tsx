@@ -49,8 +49,8 @@ export const MenuContent = ({ navItemActive, selectedItem }: Props) => {
               </Typography>
             </StyledTitle>
             <StyledCardsWrapper>
-              {(selectedItem === "menu-1" ? whatWeDoCards : aboutUsCards).map((card) => (
-                <Link to={card.path} key={useId()}>
+              {(selectedItem === "menu-1" ? whatWeDoCards : aboutUsCards).map((card, i) => (
+                <Link to={card.path} key={i}>
                   <Card title={card.title} variant="medium-responsive" hover>
                     <Typography as="p" variant="body_text_7" color={theme.colors.gray600}>
                       {card.text}

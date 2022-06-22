@@ -1,10 +1,10 @@
 import React, { ElementType, FC } from "react";
-import { arrowRightDotted, minus, plus } from "../../../assets/icons";
+import { arrowRightDotted, minus, plus, checkSvg } from "../../../assets/icons";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import { Image } from "../../atoms";
 import { ListItemVariants } from "../../../types/listItemTypes";
 import { theme } from "../../../themes/MainTheme";
-import { ReactComponent as CheckIcon } from "../../../assets/icons/CheckMark.svg";
+import { ReactSVG } from "react-svg";
 import {
   StyledIcon,
   StyledIconAfter,
@@ -90,7 +90,8 @@ export const ListItem: FC<Props> = ({
           checkIconColor={checkIconColor}
         >
           {checkIconColor ? (
-            <CheckIcon className="check-icon" />
+            // <CheckIcon className="check-icon" />
+            <ReactSVG src={checkSvg} className="check-icon" />
           ) : (
             <Image src={icon} alt="icon" width={iconWidth} height="auto" />
           )}

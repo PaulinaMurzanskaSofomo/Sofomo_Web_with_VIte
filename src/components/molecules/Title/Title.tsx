@@ -2,9 +2,10 @@ import React, { FC, ReactNode } from "react";
 import { Typography } from "../../atoms";
 import { StyledQuotation, StyledTitle, StyledUppercaseTitle } from "./StyledTitle";
 import { TypographyTypes } from "../../../types/typographyTypes";
-import { ReactComponent as Quote } from "../../../assets/icons/QuotationMark.svg";
+import { ReactSVG } from "react-svg";
 import { theme } from "../../../themes/MainTheme";
 import { MotionContainer } from "../../../libs/framer";
+import { quotationMark } from "../../../assets/icons";
 
 export interface ITitle {
   quotationMarkColor?: string;
@@ -45,7 +46,8 @@ export const Title: FC<ITitle> = ({
             quotationMarkSize={quotationMarkSize}
             quotationMarginBottom={quotationMarkSize === "3rem" ? "2rem" : "1.5"}
           >
-            <Quote className="quotation-mark" />
+            {/* <Quote className="quotation-mark" /> */}
+            <ReactSVG src={quotationMark} className="quotation-mark" />
           </StyledQuotation>
         </MotionContainer>
       )}
@@ -70,14 +72,16 @@ export const Title: FC<ITitle> = ({
           highlightColor={highlightColor}
           fontWeight="700"
         >
-          {title}{" "}
-          {titleHighlighted &&
-            wordsArray.map((word, i) => (
-              <span className="highlighted" key={i}>
-                {word}&nbsp;
-              </span>
-            ))}
-          {titleAfter}
+          <>
+            {title}{" "}
+            {titleHighlighted &&
+              wordsArray.map((word, i) => (
+                <span className="highlighted" key={i}>
+                  {word}&nbsp;
+                </span>
+              ))}
+            {titleAfter}
+          </>
         </Typography>
       </MotionContainer>
     </StyledTitle>

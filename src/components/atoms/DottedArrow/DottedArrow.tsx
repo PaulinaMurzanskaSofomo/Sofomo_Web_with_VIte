@@ -1,6 +1,7 @@
 import React, { FC } from "react";
+import { ReactSVG } from "react-svg";
 import { StyledDottedArrow } from "./StyledDottedArrow";
-import { ReactComponent as Arrow } from "../../../assets/icons/ArrowRight.svg";
+import { arrowRightDotted } from "../../../assets/icons";
 import { theme } from "../../../themes/MainTheme";
 import { ArrowVariant } from "../../../types/dottedArrowTypes";
 
@@ -27,7 +28,7 @@ export const DottedArrow: FC<IArrow> = ({
       onClick={onClick}
       width={width}
     >
-      <Arrow />
+      <ReactSVG src={arrowRightDotted} />
     </StyledDottedArrow>
   );
 };

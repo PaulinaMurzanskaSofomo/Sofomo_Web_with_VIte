@@ -15,7 +15,7 @@ interface Props {
   textTransform?: string;
 }
 
-export const Typography: FC<Props> = ({
+export const Typography = ({
   as = "p",
   children,
   color = theme.colors.gray500,
@@ -25,7 +25,7 @@ export const Typography: FC<Props> = ({
   variant,
   fontWeight = "400",
   textTransform = "none",
-}) => {
+}: Props) => {
   return (
     <StyledTypography
       as={as}

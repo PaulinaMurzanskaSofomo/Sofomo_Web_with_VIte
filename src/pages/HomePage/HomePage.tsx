@@ -16,7 +16,7 @@ import { featuresList } from "../../assets/content/homepage/SectionClientSuccess
 import { Typography, Image, SectionContainer } from "../../components/atoms";
 import { clock } from "../../assets/icons";
 import { ROUTE } from "../../routes";
-import { ReactComponent as Hero } from "../../assets/images/HeroAnimated.svg";
+import { ReactSVG } from "react-svg";
 import {
   tenYears,
   circles,
@@ -25,6 +25,7 @@ import {
   techsHorizontal,
   techsVertical,
   heroBase,
+  heroAnimated,
 } from "../../assets/images";
 import { StyledHomePage, StyledClockImage, StyledParagraphWrapper } from "./StyledHomePage";
 import { NestedDropdownList } from "../../organisms";
@@ -39,7 +40,7 @@ export const HomePage = () => {
   return (
     <StyledHomePage>
       <PageView
-        animatedComponent={<Hero />}
+        animatedComponent={<ReactSVG src={heroAnimated} />}
         animatedSvg
         image={heroBase}
         variant="home"
