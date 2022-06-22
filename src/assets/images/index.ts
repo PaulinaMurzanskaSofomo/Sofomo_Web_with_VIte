@@ -15,7 +15,11 @@ import techsVertical from "./TechIconsVertical.svg";
 import whiteboard from "./WhiteboardImage.png";
 import heroBase from "./HeroBase.png";
 import heroAnimated from "./HeroAnimated.svg";
+import androidBase from "./Android.png";
+import androidAnimated from "./androidAnimated.svg";
 export {
+  androidBase,
+  androidAnimated,
   tenYears,
   circles,
   clientsCollage,

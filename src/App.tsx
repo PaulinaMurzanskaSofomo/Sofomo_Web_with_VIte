@@ -7,9 +7,7 @@ import PageOverlayContext from "./context/PageOverlayContext";
 import { ContactFormContext, NavItemStateContext } from "./context";
 import { PageTemplate } from "./templates/PageTemplate";
 import { ROUTE } from "./routes";
-import { OutsourcePage } from "./pages/OutsourcePage";
-import { HomePage } from "./pages/HomePage";
-// import { AndroidPage } from "./pages/AndroidPage";
+import { HomePage, OutsourcePage, AndroidPage } from "./pages";
 
 function App() {
   return (
@@ -23,7 +21,7 @@ function App() {
                 <Routes>
                   <Route path={ROUTE.HOME_PAGE} element={<HomePage />} />
                   <Route path={ROUTE.OUTSOURCE} element={<OutsourcePage />} />
-                  {/* <Route path={ANDROID} element={<AndroidPage />} /> */}
+                  <Route path={ROUTE.ANDROID} element={<AndroidPage />} />
                 </Routes>
               </PageTemplate>
             </BrowserRouter>

@@ -27,6 +27,20 @@ export const pageViewVariants: any = {
       paddingBottom: "23.6rem",
     },
   },
+  android: {
+    paddingTop: "6rem",
+    paddingBottom: "8rem",
+    contentMargin: "1.5rem 0 0 0",
+    tablet: {
+      paddingTop: "18.5rem",
+      paddingBottom: "18.4rem",
+      contentWidth: "50%",
+    },
+    laptop: {
+      paddingTop: "23.5rem",
+      paddingBottom: "23.6rem",
+    },
+  },
   primary: {
     paddingTop: "6rem",
     paddingBottom: "4rem",

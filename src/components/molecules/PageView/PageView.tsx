@@ -56,7 +56,12 @@ export const PageView: FC<Props> = ({
         {image && (
           <StyledViewImage className={variant} name={variant}>
             <MotionContainer>
-              <Image src={image} alt="section" animatedComponent={animatedComponent} />
+              <Image
+                src={image}
+                alt="section"
+                animatedComponent={animatedComponent}
+                className={variant}
+              />
             </MotionContainer>
           </StyledViewImage>
         )}

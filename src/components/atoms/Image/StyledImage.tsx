@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../../utils";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface Props {
   width?: string;
@@ -21,6 +22,11 @@ export const StyledImageContainer = styled.div<Props>`
     top: 0;
     left: 0;
     z-index: -1;
+  }
+  &.android {
+    svg {
+      z-index: 3;
+    }
   }
 `;
 

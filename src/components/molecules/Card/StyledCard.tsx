@@ -24,12 +24,19 @@ export const StyledCard = styled.div<Props>`
     padding: 1.5rem;
     border-radius: 2px;
   }
+
   &.large-responsive {
     margin-bottom: 3.5rem;
     @media ${device.tablet} {
       margin-left: -1.5rem;
       padding: 1.5rem;
     }
+  }
+  &.medium-xl {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: ${({ headingColor }) => headingColor || theme.colors.dark};
   }
 `;
 export const StyledHeading = styled.h3<Props>`

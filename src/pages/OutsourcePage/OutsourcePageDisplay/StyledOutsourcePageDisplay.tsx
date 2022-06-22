@@ -22,6 +22,7 @@ export const StyledStickyContainer = styled(StyledResponsiveContainer)`
   z-index: 35;
   padding-bottom: 20rem;
   display: none;
+  border: 2px solid red;
   @media ${device.tablet} {
     display: block;
     width: max-content;
@@ -50,7 +51,7 @@ export const StyledStickyForm = styled.div`
     display: block;
     z-index: 12;
     position: sticky;
-    top: 14rem;
+    top: 15rem;
     right: 0;
     opacity: 1;
     height: max-content;

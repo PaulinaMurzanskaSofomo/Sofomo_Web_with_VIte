@@ -9,4 +9,5 @@ export type PageViewVariants =
   | "centeredNoImage"
   | "skillset"
   | "halfWidth"
+  | "android"
   | "withArrow";

@@ -9,3 +9,6 @@ export { PageView } from "./PageView";
 export { ImagesSwiper } from "./ImagesSwiper";
 export { TestimonialsSwiper } from "./TestimonialsSwiper";
 export { CurrencyBanner } from "./CurrencyBanner";
+export { ProgressCard } from "./ProgressCard";
+export { ProgressCards } from "./ProgressCards";
+export { AndroidIntro } from "./AndroidIntro";
